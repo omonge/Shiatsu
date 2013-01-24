@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 6 elements to &apos;theme&apos;&#x0D;&#x0A;- Original project: &apos;ChronoManagerWeb&apos;&#x0D;&#x0A;- Destination element: &apos;theme&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     arrow-first.gif&#x0D;&#x0A;     arrow-previous.gif&#x0D;&#x0A;     arrow-fr.gif&#x0D;&#x0A;     arrow-next.gif&#x0D;&#x0A;     arrow-last.gif&#x0D;&#x0A;     arrow-ff.gif" description="Copy files" element1="WebContent/theme/arrow-first.gif" element2="WebContent/theme/arrow-previous.gif" element3="WebContent/theme/arrow-fr.gif" element4="WebContent/theme/arrow-next.gif" element5="WebContent/theme/arrow-last.gif" element6="WebContent/theme/arrow-ff.gif" files="6" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1351542084345" target="/ShiatsuWeb/WebContent/theme" units="0" version="1.0"/>
+</session>

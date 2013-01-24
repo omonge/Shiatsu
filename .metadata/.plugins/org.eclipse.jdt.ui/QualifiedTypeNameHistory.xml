@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.shiatsu.bo.ClienteBo"/>
+<fullyQualifiedTypeName name="com.utilidades.businessErrorHelper.BusinessErrorHelper"/>
+<fullyQualifiedTypeName name="com.shiatsu.dao.ClienteDao"/>
+<fullyQualifiedTypeName name="com.utilidades.web.faces.FacesController"/>
+<fullyQualifiedTypeName name="com.shiatsu.domain.Cliente"/>
+<fullyQualifiedTypeName name="com.shiatsu.web.bundles.Bundle"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="com.shiatsu.domain.Cita"/>
+<fullyQualifiedTypeName name="javax.faces.application.FacesMessage"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.shiatsu.web.controller.ClienteController"/>
+<fullyQualifiedTypeName name="javax.faces.component.html.HtmlForm"/>
+<fullyQualifiedTypeName name="com.shiatsu.dao.PaisDao"/>
+<fullyQualifiedTypeName name="com.shiatsu.dao.ProfesionDao"/>
+<fullyQualifiedTypeName name="com.shiatzu.util.Controller"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.shiatsu.bo.ProfesionBo"/>
+<fullyQualifiedTypeName name="com.shiatsu.bo.PaisBo"/>
+<fullyQualifiedTypeName name="com.shiatsu.bo.TipoAlopeciaBo"/>
+<fullyQualifiedTypeName name="com.shiatsu.domain.Profesion"/>
+<fullyQualifiedTypeName name="com.shiatsu.domain.Pais"/>
+<fullyQualifiedTypeName name="com.shiatsu.domain.TipoAlopecia"/>
+<fullyQualifiedTypeName name="com.shiatsu.domain.Medicamento"/>
+<fullyQualifiedTypeName name="com.utilidades.business.BusinessErrorHelper"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.shiatsu.domain.Droga"/>
+<fullyQualifiedTypeName name="com.shiatsu.domain.Usuario"/>
+<fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="com.shiatzu.util.Utilidades"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+</qualifiedTypeNameHistroy>

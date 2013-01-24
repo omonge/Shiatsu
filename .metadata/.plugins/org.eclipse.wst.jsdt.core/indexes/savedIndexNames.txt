@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+C:\Users\omonge\WS_SHI\shiatMonSal\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3996860156.index
+972922575.index
+3548685155.index
+2769877028.index
+1622140818.index

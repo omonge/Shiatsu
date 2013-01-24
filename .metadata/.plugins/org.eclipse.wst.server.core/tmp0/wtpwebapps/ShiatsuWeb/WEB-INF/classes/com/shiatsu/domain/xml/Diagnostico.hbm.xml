@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.shiatsu.domain">
+    <class name="Diagnostico" table="CAT_DIAGNOSTICO">
+        <id name="pvStCodigo" column="CODIGO" type="java.lang.String" length="22">
+         	<generator class="assigned"></generator>
+         </id>
+        <property name="pvStNombre" 				column="NOMBRE" 				type="java.lang.String" 	length="50"/>   
+		<property name="pvInTipoAlopecia" 			column="TIPO_ALOPECIA" 			type="java.lang.Integer" 	length="3"/>  
+		<property name="pvDoPorcentajePerdida" 		column="PORCENTAJE_PERDIDA" 	type="java.lang.Double" 	length="2"	precision="2"/>   
+		<property name="pvStDermatitisOleosa" 		column="DERMATITIS_OLEOSA" 		type="java.lang.String" 	length="2"/>  
+		<property name="pvStDermatitisSeca" 		column="DERMATITIS_SECA" 		type="java.lang.String" 	length="2"/> 
+		<property name="pvStDermatitisSeborreica" 	column="DERMATITIS_SEBORREICA" 	type="java.lang.String" 	length="2"/>  
+		<property name="pvStCaspa" 					column="CASPA" 					type="java.lang.String" 	length="2"/>   
+		<property name="pvStHongo" 					column="HONGO" 					type="java.lang.String" 	length="2"/> 
+		<property name="pvStDeshidratacion" 		column="DESHIDRATACION" 		type="java.lang.String" 	length="2"/> 
+		<property name="pvStPsoriasis" 				column="PSORIASIS" 				type="java.lang.String" 	length="2"/>  
+		<property name="pvStTelanocitos" 			column="TELANOCITOS" 			type="java.lang.String" 	length="2"/> 
+		<property name="pvStEstado" 				column="ESTADO" 					type="java.lang.String" 	length="1"/>
+        <property name="pvDaModifica" 				column="FMODIFICA" 					type="java.util.Date"/>
+        <many-to-one name="pvObUsuario" class="com.shiatsu.domain.Usuario" lazy="false" >
+		    <column name="USUARIO" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>
+
+

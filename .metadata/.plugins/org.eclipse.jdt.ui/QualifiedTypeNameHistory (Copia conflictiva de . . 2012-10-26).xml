@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.shiatsu.bo.ClienteBo"/>
+<fullyQualifiedTypeName name="com.utilidades.businessErrorHelper.BusinessErrorHelper"/>
+<fullyQualifiedTypeName name="com.utilidades.business.BusinessErrorHelper"/>
+<fullyQualifiedTypeName name="com.shiatsu.dao.ClienteDao"/>
+<fullyQualifiedTypeName name="com.utilidades.web.faces.FacesController"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.shiatsu.domain.Cliente"/>
+<fullyQualifiedTypeName name="com.shiatsu.web.bundles.Bundle"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="com.shiatsu.domain.Cita"/>
+<fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
+<fullyQualifiedTypeName name="javax.faces.application.FacesMessage"/>
+</qualifiedTypeNameHistroy>

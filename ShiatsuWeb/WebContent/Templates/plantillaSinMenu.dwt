@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <meta http-equiv="Content-Type"         content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Content-Style-Type"   content="text/css">
+    <meta http-equiv="X-UA-Compatible"      content="IE=EmulateIE7"/> 
+	<!-- TemplateBeginEditable name="doctitle" --><title>GICE</title><!-- TemplateEndEditable --> 
+	<%@ taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
+	<%@ taglib uri="http://java.sun.com/jsf/core" prefix="f" %>
+	<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %> 
+	<%@ taglib uri="http://www.jenia.org/jsf/popup" prefix="jp" %>
+	<%@ taglib uri="http://myfaces.apache.org/tomahawk" prefix="t"%>
+    <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+    
+    <link href="../html5/normalize.css"                rel="stylesheet" type="text/css" /> 
+    <link href="../html5/plantilla_html5.css"          rel="stylesheet" type="text/css" />
+    <link href="../theme/hmenu/src/skin-modern3.css"   rel="stylesheet" type="text/css" />
+    <link href="../theme/styles/SIGETR.css"            rel="stylesheet" type="text/css" />
+    <link href="../theme/styles/shiatzu.css"              rel="stylesheet" type="text/css" />
+    <link href="../theme/styles/menu.css"              rel="stylesheet" type="text/css" />
+    <link href="../theme/styles/stylesheet.css"        rel="stylesheet" type="text/css" />
+    <link href="../theme/styles/tablas.css"            rel="stylesheet" type="text/css" />
+    <link href="../theme/stylesheet.css"               rel="stylesheet" type="text/css" />
+    <link href="../theme/tabpanel.css"                 rel="stylesheet" type="text/css" />
+    <link href="../theme/Master.css"                   rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../html5/jquery.js"></script> 
+    <script type="text/javascript" src="../html5/plantilla_html5.js"></script> 
+    <script type="text/javascript" src="../theme/hmenu/src/hmenu.js"></script>
+    <script type="text/javascript">document.writeln("<style type='text/css'>#menu { display: none; }</style>");</script>    
+</head> 
+
+<f:view locale="es-CR">
+    <f:loadBundle var="rcs" basename="com.shiatsu.web.bundles.recursos" />
+        <body onload="DynarchMenu.setup('menu'); getFocus();">
+            <div id="wrap"> 
+                <header id="tablaBanner">
+                </header>
+                <nav>
+                    
+                </nav>
+                <section id="main"> 
+                    <div id="titulo" class="Tit_04_naranja">
+					<!-- TemplateBeginEditable name="titulo" -->Nombre de la aplicaci&oacute;n<!-- TemplateEndEditable -->
+                    </div>
+                    <div id="cuerpo" class="Text">
+						<!-- TemplateBeginEditable name="contenido" -->Aqu&iacute; usted puede poner todo el texto explicativo de la aplicaci&oacute;n, as&iacute; como darle la bienvenida a qui&eacute;n utiliza la aplicaci&oacute;n, dar recomendaciones de uso o incluso indicar donde hacer los reportes de aver&iacute;as o solicitudes de servicio.<!-- TemplateEndEditable -->   
+                    </div>
+                </section>
+            </div>
+            <div id="footer">
+                <footer>
+                </footer>
+            </div> 
+            <form method="post" action="ibm_security_logout" name="logout" id="logout">
+                <input type="hidden" name="logoutExitPage" value="main.jsf" />
+            </form>   
+        </body>
+    </f:view>
+</html>

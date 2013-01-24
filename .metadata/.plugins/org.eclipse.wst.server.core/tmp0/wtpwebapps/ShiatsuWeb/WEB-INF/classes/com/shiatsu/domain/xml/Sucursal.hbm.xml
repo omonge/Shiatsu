@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.shiatsu.domain">
+    <class name="Sucursal" table="CAT_SUCURSAL">
+        <id name="pvInCodigo" column="CODIGO" type="java.lang.Integer" length="10">
+        	<generator class="identity"></generator>
+        </id>
+        <property name="pvStDescripcion" 			column="DESCRIPCION" 				type="java.lang.String" 	length="100"/>
+        <property name="pvStEstado"                 column="ESTADO"                     type="java.lang.String"     length="1"/>
+        <property name="pvDaModifica"               column="FMODIFICA"                  type="java.util.Date"/>
+        <many-to-one name="pvObUsuario" class="com.shiatsu.domain.Usuario" lazy="false" >
+            <column name="USUARIO" />
+        </many-to-one>
+     </class>
+</hibernate-mapping>
+

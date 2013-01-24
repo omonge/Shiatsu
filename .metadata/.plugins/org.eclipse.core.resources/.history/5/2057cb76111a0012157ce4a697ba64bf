@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.shiatsu.domain">
+    <class name="Cliente" table="CLIENTE">
+        <id name="pvLoCodigo" column="CODIGO" type="java.lang.Long" length="10">
+            <generator class="increment" />
+        </id>
+        <property name="pvInEstado" 		    column="ESTADO" 	type="java.lang.Integer" 	length="1"/>
+        <property name="pvStNombre" 			column="NOMBRE" 	type="java.lang.String" 	length="50"/>
+        <property name="pvStDireccion" 			column="DIRECCION" 	type="java.lang.String" 	length="100"/>
+        <property name="pvStEmail1" 			column="EMAIL1" 	type="java.lang.String" 	length="50"/>
+        <property name="pvStEmail2" 			column="EMAIL2" 	type="java.lang.String" 	length="50"/>
+        <property name="pvLoFax" 				column="FAX" 	    type="java.lang.Long" 		length="10"/>
+        <property name="pvLoTelefono1" 			column="TELEFONO1" 	type="java.lang.Long" 		length="10"/>
+        <property name="pvLoTelefono2" 			column="TELEFONO2" 	type="java.lang.Long" 		length="10"/>
+        <property name="pvStComentario" 		column="COMENTARIO" type="java.lang.String" 	length="100"/>
+    </class>
+</hibernate-mapping>
+

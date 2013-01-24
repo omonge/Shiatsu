@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="ShiatsuWeb" path="/ShiatsuWeb">
+  <ResourceLink global="jdbc/mySqlShiatsuDS" name="jdbc/mySqlShiatsuDS" type="javax.sql.DataSource"/>
+</Context>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.shiatsu.domain">
+    <class name="Cliente" table="CLIENTE">
+        <id name="pvLoCodigo" column="CODIGO" type="java.lang.Long" length="10">
+            <generator class="increment" />
+        </id>
+        <property name="pvInEstado" 		    column="ESTADO" 	type="java.lang.Integer" 	length="1"/>
+    </class>
+</hibernate-mapping>
+

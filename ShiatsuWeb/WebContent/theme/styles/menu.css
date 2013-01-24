@@ -1,0 +1,100 @@
+.BlockMenuA {
+	HEIGHT: 150px; 
+	LEFT: 0px; 
+	POSITION: absolute; 
+	TOP: 125px; 
+	VISIBILITY: visible; 
+	WIDTH: 140px;
+}
+.BlockMenuB{
+	HEIGHT: 150px; 
+	LEFT: 0px; 
+	POSITION: absolute; 
+	TOP: 125px; 
+	VISIBILITY: hidden; 
+	WIDTH: 140px;
+}
+
+.TablaMenu {
+	WIDTH: 140px;
+	background-color: #CED8E9;
+}
+.TRLinea{
+	background-color: #FFFFFF;
+}
+.TROpcion{
+	background-color: #ced8e9;
+}
+.TRBuscador{
+	background-color: #ced8e9;
+}
+.TRLineaBuscador{
+	background-color: #FFFFFF;
+}
+.TRSubOpcion{
+	background-color: #e7ecf4;
+}
+.BordeIzq{
+	WIDTH: 10px;
+}
+.BordeCentro{
+	WIDTH: 140px;
+}
+.BordeDer{
+	WIDTH: 10px;
+}
+.EspacioIzq{
+	height: 20px;
+	WIDTH: 10px;
+}
+.EspacioDer{
+	height: 20px;
+	WIDTH: 10px;
+}
+.EspacioOpcion{
+	WIDTH: 120px;
+	height: 20px;
+	font-size: 10px;
+	color: #7f8485;
+	text-align: left;
+}
+.EspacioSubOpcion{
+	height: 20px;
+	WIDTH: 120px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #7f8485;
+	text-align: left;
+}
+
+.EspacioOpcion a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #7f8485;
+	text-decoration: none;
+}
+.EspacioOpcion a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #c47900;
+	text-decoration: none;
+	font-size: 10px;
+}
+.EspacioSubOpcion a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #7f8485;
+	text-decoration: none;
+}
+.EspacioSubOpcion a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #c47900;
+	text-decoration: none;
+	font-size: 10px;
+}
+.EspacioBuscador{
+	WIDTH: 120px;
+	height: 20px;
+	font-size: 10px;
+	color: #7f8485;
+	text-align: center;
+} 

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13467687278250" configfile="/ShiatsuWeb/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="chronoManListClientes" x="338" y="178" id="pf13506841981180" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" outlinks="pf13509314293100 pf13509314293101" inlinks="pf13509314293102 pf13509314293103" path="/shiatsuListaClientes.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActCliente" x="122" y="178" id="pf13509314293114" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf13509314293102 pf13509314293103" inlinks="pf13509314293100 pf13509314293101" path="/shiatsuActCliente.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuListaPais" x="338" y="562" id="pf13518038206950" referenceLink="//@navigationRule.3/@navigationCase.1/@toViewId|" outlinks="pf13518038206961 pf13518038206962" inlinks="pf13518038206963 pf13518038206964" path="/shiatsuListaPais.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActPais" x="122" y="562" id="pf13518038206965" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf13518038206963 pf13518038206964" inlinks="pf13518038206961 pf13518038206962" path="/shiatsuActPais.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuListaProfesion" x="338" y="946" id="pf135180745652810" referenceLink="//@navigationRule.5/@navigationCase.1/@toViewId|" outlinks="pf135180745652811 pf135180745652812" inlinks="pf135180745652813 pf135180745652814" path="/shiatsuListaProfesion.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActProfesion" x="122" y="946" id="pf135180745652815" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf135180745652813 pf135180745652814" inlinks="pf135180745652811 pf135180745652812" path="/shiatsuActProfesion.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuListaTipoAlopecia" x="338" y="1330" id="pf135180745652816" referenceLink="//@navigationRule.7/@navigationCase.1/@toViewId|" outlinks="pf135180745652817 pf135180745652818" inlinks="pf135180745652819 pf135180745652820" path="/shiatsuListaTipoAlopecia.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActTipoAlopecia" x="122" y="1330" id="pf135180745652821" referenceLink="//@navigationRule.7/@fromViewId|" outlinks="pf135180745652819 pf135180745652820" inlinks="pf135180745652817 pf135180745652818" path="/shiatsuActTipoAlopecia.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuListaMedicamento" x="338" y="1714" id="pf13557616306510" referenceLink="//@navigationRule.9/@navigationCase.1/@toViewId|" outlinks="pf13557616306511 pf13557616306512" inlinks="pf13557616306513 pf13557616306514" path="/shiatsuListaMedicamento.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActMedicamento" x="122" y="1714" id="pf13557616306515" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf13557616306513 pf13557616306514" inlinks="pf13557616306511 pf13557616306512" path="/shiatsuActMedicamento.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuListaEnfermedad" x="338" y="2098" id="pf13557616306516" referenceLink="//@navigationRule.11/@navigationCase.1/@toViewId|" outlinks="pf13557616306517 pf13557616306518" inlinks="pf13557616306519 pf135576163065110" path="/shiatsuListaEnfermedad.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActEnfermedad" x="122" y="2098" id="pf135576163065111" referenceLink="//@navigationRule.11/@fromViewId|" outlinks="pf13557616306519 pf135576163065110" inlinks="pf13557616306517 pf13557616306518" path="/shiatsuActEnfermedad.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuListaDroga" x="338" y="2482" id="pf13560233528140" referenceLink="//@navigationRule.13/@navigationCase.1/@toViewId|" outlinks="pf13560233528141 pf13560233528142" inlinks="pf13560233528143 pf13560233528144" path="/shiatsuListaDroga.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActDroga" x="122" y="2482" id="pf13560233528145" referenceLink="//@navigationRule.13/@fromViewId|" outlinks="pf13560233528143 pf13560233528144" inlinks="pf13560233528141 pf13560233528142" path="/shiatsuActDroga.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuListaTipoCliente" x="338" y="2866" id="pf13560233528146" referenceLink="//@navigationRule.15/@navigationCase.1/@toViewId|" outlinks="pf13560233528147 pf13560233528148" inlinks="pf13560233528149 pf135602335281410" path="/shiatsuListaTipoCliente.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActTipoCliente" x="122" y="2866" id="pf135602335281411" referenceLink="//@navigationRule.15/@fromViewId|" outlinks="pf13560233528149 pf135602335281410" inlinks="pf13560233528147 pf13560233528148" path="/shiatsuActTipoCliente.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuListaUsuario" x="338" y="3250" id="pf135602335281412" referenceLink="//@navigationRule.17/@navigationCase.1/@toViewId|" outlinks="pf135602335281413 pf135602335281414" inlinks="pf135602335281515 pf135602335281516" path="/shiatsuListaUsuario.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActUsuario" x="122" y="3250" id="pf135602335281517" referenceLink="//@navigationRule.17/@fromViewId|" outlinks="pf135602335281515 pf135602335281516" inlinks="pf135602335281413 pf135602335281414" path="/shiatsuActUsuario.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuListaSuministro" x="338" y="3634" id="pf135602335281518" referenceLink="//@navigationRule.19/@navigationCase.1/@toViewId|" outlinks="pf135602335281519 pf135602335281520" inlinks="pf135602335281521 pf135602335281522" path="/shiatsuListaSuministro.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActSuministro" x="122" y="3634" id="pf135602335281523" referenceLink="//@navigationRule.19/@fromViewId|" outlinks="pf135602335281521 pf135602335281522" inlinks="pf135602335281519 pf135602335281520" path="/shiatsuActSuministro.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuListaTarjeta" id="pf135602335281524" referenceLink="//@navigationRule.21/@navigationCase.1/@toViewId|" outlinks="pf135602335281525 pf135602335281526" inlinks="pf135602335281527 pf135602335281528" path="/shiatsuListaTarjeta.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="shiatsuActTarjeta" id="pf135602335281529" referenceLink="//@navigationRule.21/@fromViewId|" outlinks="pf135602335281527 pf135602335281528" inlinks="pf135602335281525 pf135602335281526" path="/shiatsuActTarjeta.jsp"/>
+  <links id="pf13509314293100" target="pf13509314293114" source="pf13506841981180" outcome="success" fromaction="#{clienteController.cargarObjeto}"/>
+  <links id="pf13509314293101" target="pf13509314293114" source="pf13506841981180" outcome="success" fromaction="#{clienteController.irAgregar}"/>
+  <links id="pf13509314293102" target="pf13506841981180" source="pf13509314293114" outcome="success" fromaction="#{clienteController.regresar}"/>
+  <links id="pf13509314293103" target="pf13506841981180" source="pf13509314293114" outcome="success" fromaction="#{clienteController.eliminar}"/>
+  <links id="pf13518038206961" target="pf13518038206965" source="pf13518038206950" outcome="success" fromaction="#{paisController.cargarObjeto}"/>
+  <links id="pf13518038206962" target="pf13518038206965" source="pf13518038206950" outcome="success" fromaction="#{paisController.irAgregar}"/>
+  <links id="pf13518038206963" target="pf13518038206950" source="pf13518038206965" outcome="success" fromaction="#{paisController.regresar}"/>
+  <links id="pf13518038206964" target="pf13518038206950" source="pf13518038206965" outcome="success" fromaction="#{paisController.eliminar}"/>
+  <links id="pf135180745652811" target="pf135180745652815" source="pf135180745652810" outcome="success" fromaction="#{profesionController.cargarObjeto}"/>
+  <links id="pf135180745652812" target="pf135180745652815" source="pf135180745652810" outcome="success" fromaction="#{profesionController.irAgregar}"/>
+  <links id="pf135180745652813" target="pf135180745652810" source="pf135180745652815" outcome="success" fromaction="#{profesionController.regresar}"/>
+  <links id="pf135180745652814" target="pf135180745652810" source="pf135180745652815" outcome="success" fromaction="#{profesionController.eliminar}"/>
+  <links id="pf135180745652817" target="pf135180745652821" source="pf135180745652816" outcome="success" fromaction="#{tipoAlopeciaController.cargarObjeto}"/>
+  <links id="pf135180745652818" target="pf135180745652821" source="pf135180745652816" outcome="success" fromaction="#{tipoAlopeciaController.irAgregar}"/>
+  <links id="pf135180745652819" target="pf135180745652816" source="pf135180745652821" outcome="success" fromaction="#{tipoAlopeciaController.regresar}"/>
+  <links id="pf135180745652820" target="pf135180745652816" source="pf135180745652821" outcome="success" fromaction="#{tipoAlopeciaController.eliminar}"/>
+  <links id="pf13557616306511" target="pf13557616306515" source="pf13557616306510" outcome="success" fromaction="#{medicamentoController.cargarObjeto}"/>
+  <links id="pf13557616306512" target="pf13557616306515" source="pf13557616306510" outcome="success" fromaction="#{medicamentoController.irAgregar}"/>
+  <links id="pf13557616306513" target="pf13557616306510" source="pf13557616306515" outcome="success" fromaction="#{medicamentoController.regresar}"/>
+  <links id="pf13557616306514" target="pf13557616306510" source="pf13557616306515" outcome="success" fromaction="#{medicamentoController.eliminar}"/>
+  <links id="pf13557616306517" target="pf135576163065111" source="pf13557616306516" outcome="success" fromaction="#{enfermedadController.cargarObjeto}"/>
+  <links id="pf13557616306518" target="pf135576163065111" source="pf13557616306516" outcome="success" fromaction="#{enfermedadController.irAgregar}"/>
+  <links id="pf13557616306519" target="pf13557616306516" source="pf135576163065111" outcome="success" fromaction="#{enfermedadController.regresar}"/>
+  <links id="pf135576163065110" target="pf13557616306516" source="pf135576163065111" outcome="success" fromaction="#{enfermedadController.eliminar}"/>
+  <links id="pf13560233528141" target="pf13560233528145" source="pf13560233528140" outcome="success" fromaction="#{drogaController.cargarObjeto}"/>
+  <links id="pf13560233528142" target="pf13560233528145" source="pf13560233528140" outcome="success" fromaction="#{drogaController.irAgregar}"/>
+  <links id="pf13560233528143" target="pf13560233528140" source="pf13560233528145" outcome="success" fromaction="#{drogaController.regresar}"/>
+  <links id="pf13560233528144" target="pf13560233528140" source="pf13560233528145" outcome="success" fromaction="#{drogaController.eliminar}"/>
+  <links id="pf13560233528147" target="pf135602335281411" source="pf13560233528146" outcome="success" fromaction="#{tipoClienteController.cargarObjeto}"/>
+  <links id="pf13560233528148" target="pf135602335281411" source="pf13560233528146" outcome="success" fromaction="#{tipoClienteController.irAgregar}"/>
+  <links id="pf13560233528149" target="pf13560233528146" source="pf135602335281411" outcome="success" fromaction="#{tipoClienteController.regresar}"/>
+  <links id="pf135602335281410" target="pf13560233528146" source="pf135602335281411" outcome="success" fromaction="#{tipoClienteController.eliminar}"/>
+  <links id="pf135602335281413" target="pf135602335281517" source="pf135602335281412" outcome="success" fromaction="#{usuarioController.cargarObjeto}"/>
+  <links id="pf135602335281414" target="pf135602335281517" source="pf135602335281412" outcome="success" fromaction="#{usuarioController.irAgregar}"/>
+  <links id="pf135602335281515" target="pf135602335281412" source="pf135602335281517" outcome="success" fromaction="#{usuarioController.regresar}"/>
+  <links id="pf135602335281516" target="pf135602335281412" source="pf135602335281517" outcome="success" fromaction="#{usuarioController.eliminar}"/>
+  <links id="pf135602335281519" target="pf135602335281523" source="pf135602335281518" outcome="success" fromaction="#{suministroController.cargarObjeto}"/>
+  <links id="pf135602335281520" target="pf135602335281523" source="pf135602335281518" outcome="success" fromaction="#{suministroController.irAgregar}"/>
+  <links id="pf135602335281521" target="pf135602335281518" source="pf135602335281523" outcome="success" fromaction="#{suministroController.regresar}"/>
+  <links id="pf135602335281522" target="pf135602335281518" source="pf135602335281523" outcome="success" fromaction="#{suministroController.eliminar}"/>
+  <links id="pf135602335281525" target="pf135602335281529" source="pf135602335281524" outcome="success" fromaction="#{tarjetaController.cargarObjeto}"/>
+  <links id="pf135602335281526" target="pf135602335281529" source="pf135602335281524" outcome="success" fromaction="#{tarjetaController.irAgregar}"/>
+  <links id="pf135602335281527" target="pf135602335281524" source="pf135602335281529" outcome="success" fromaction="#{tarjetaController.regresar}"/>
+  <links id="pf135602335281528" target="pf135602335281524" source="pf135602335281529" outcome="success" fromaction="#{tarjetaController.eliminar}"/>
+</pageflow:Pageflow>

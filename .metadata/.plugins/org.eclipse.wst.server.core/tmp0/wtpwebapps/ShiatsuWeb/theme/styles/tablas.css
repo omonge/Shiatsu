@@ -1,0 +1,132 @@
+.odd {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #7F8485;
+	background-color: #E5E6E7;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.oddBlank {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #7F8485;
+	padding: 3px;
+	font-weight: bold;
+}
+
+
+.even {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #7F8485;
+	background-color: #fdfdfd;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.sorted .order1 .order2 {
+}
+
+table.Tit04Tabla {
+	width: 814px;
+}
+
+table.Tit04Tabla .titulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+	background-image: url(images/tableHeadBack_lg.gif);
+	white-space: nowrap;
+}
+
+
+
+table.Tit04TablaSmall {
+	width: 30%;
+}
+
+table.Tit04TablaSmall .tituloSmall {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	/*text-align: center;*/
+	font-weight: bold;
+	background-image: url(images/tableHeadBack_lg.gif);
+	white-space: nowrap;
+}
+
+
+/*table.Tit04Tabla thead th a {
+	text-decoration: none;
+	color: #FFFFFF;
+}*/
+
+/*table.Tit04Tabla thead th a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}*/
+table.tablaDetalle {
+	width: 814px;
+}
+table.tablaDetalle thead th a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+table.tablaDetalle thead th a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+table.tablaDetalle .titulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: bold;
+	background-image: url(images/tableHeadBack_lg.gif);
+	white-space: nowrap;
+	width: 170px;
+	height: 22px;
+}
+table.tablaDetalle .detalle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #7F8485;
+	background-color: #fcfcfc;
+	height: 22px;
+}
+
+table.tablaDetalle tbody td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+/*	color: #7F8485; */
+	color: #313131;
+	text-align: left;
+	vertical-align: top;
+}
+
+table.tablaEncabezado {
+	width: 450px;
+	text-align: left;
+	margin-left: 0;
+	padding: 2;
+}
+
+table.tablaEncabezado tbody td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #313131;
+	text-align: left;
+	vertical-align: top;
+}
+
+table.comprobante {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #313131;
+	text-align: left;
+	vertical-align: top;
+}

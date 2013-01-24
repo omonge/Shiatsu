@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd"
+    xmlns:jee="http://www.springframework.org/schema/jee">
+
+    <!--========== Transaction Manager ==========-->
+    <bean id="shiatsuTM" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="shiatsuSF"/>
+    </bean>
+    <!--========== Transaction Proxy ==========-->
+    <bean id="shiatsuTP" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean" abstract="true">
+        <property name="transactionManager" ref="shiatsuTM"/>        
+        <property name="transactionAttributes">
+            <props>
+                <prop key="agregar*">PROPAGATION_REQUIRED</prop>
+                <prop key="modificar*">PROPAGATION_REQUIRED</prop>
+                <prop key="eliminar*">PROPAGATION_REQUIRED</prop>
+                <prop key="buscar*">PROPAGATION_REQUIRED</prop>
+                <prop key="existe*">PROPAGATION_REQUIRED</prop>
+                <prop key="*">PROPAGATION_REQUIRED</prop>
+            </props>
+        </property>
+    </bean>
+   	
+   <!--========== Bussiness Objects ==========-->
+   
+      
+    <bean id="clienteBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.ClienteBoImpl">
+                <property name="clienteDao" ref="clienteDao"/>
+            </bean>
+        </property> 
+    </bean>
+    
+    
+    <bean id="cantonBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.CantonBoImpl">
+                <property name="cantonDao" ref="cantonDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="diagnosticoBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.DiagnosticoBoImpl">
+                <property name="diagnosticoDao" ref="diagnosticoDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="distritoBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.DistritoBoImpl">
+                <property name="distritoDao" ref="distritoDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="drogaBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.DrogaBoImpl">
+                <property name="drogaDao" ref="drogaDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="enfermedadBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.EnfermedadBoImpl">
+                <property name="enfermedadDao" ref="enfermedadDao"/>
+            </bean>
+        </property> 
+    </bean>
+    
+    <bean id="medicamentoBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.MedicamentoBoImpl">
+                <property name="medicamentoDao" ref="medicamentoDao"/>
+            </bean>
+        </property> 
+    </bean>
+ 
+    <bean id="tipoAlopeciaBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.TipoAlopeciaBoImpl">
+                <property name="tipoAlopeciaDao" ref="tipoAlopeciaDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="tipoClienteBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.TipoClienteBoImpl">
+                <property name="tipoClienteDao" ref="tipoClienteDao"/>
+            </bean>
+        </property> 
+    </bean>
+    
+    <bean id="paisBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.PaisBoImpl">
+                <property name="paisDao" ref="paisDao"/>
+            </bean>
+        </property> 
+    </bean>
+    
+     <bean id="profesionBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.ProfesionBoImpl">
+                <property name="profesionDao" ref="profesionDao"/>
+            </bean>
+        </property> 
+    </bean>
+    
+    <bean id="provinciaBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.ProvinciaBoImpl">
+                <property name="provinciaDao" ref="provinciaDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="suministroBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.SuministroBoImpl">
+                <property name="suministroDao" ref="suministroDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="tarjetaBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.TarjetaBoImpl">
+                <property name="tarjetaDao" ref="tarjetaDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="productoBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.ProductoBoImpl">
+                <property name="productoDao" ref="productoDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="sucursalBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.SucursalBoImpl">
+                <property name="sucursalDao" ref="sucursalDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="bodegaBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.BodegaBoImpl">
+                <property name="bodegaDao" ref="bodegaDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="frecuenciaAsistenciaBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.FrecuenciaAsistenciaBoImpl">
+                <property name="frecuenciaAsistenciaDao" ref="frecuenciaAsistenciaDao"/>
+            </bean>
+        </property> 
+    </bean>
+    <bean id="usuarioBo" parent="shiatsuTP">
+        <property name="target">
+            <bean class="com.shiatsu.bo.impl.UsuarioBoImpl">
+                <property name="usuarioDao" ref="usuarioDao"/>
+            </bean>
+        </property> 
+    </bean>
+    
+</beans>

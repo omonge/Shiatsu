@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="174" key="DIALOG_Y_ORIGIN"/>
+		<item value="53" key="DIALOG_X_ORIGIN"/>
+		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wholeword"/>
+		<item value="" key="selection"/>
+		<list key="findhistory">
+			<item value="messages1"/>
+			<item value="boton.agregar"/>
+			<item value="&lt;h:commandButton type=&quot;submit&quot; value=&quot;#{rcs[&apos;boton.agregar&apos;]}&quot; styleClass=&quot;commandExButton&quot; id=&quot;btnAgregar&quot; rendered=&quot;#{clienteController.agregar}&quot; action=&quot;#{clienteController.agregarCliente}&quot;/&gt;"/>
+			<item value="msgTxtPvDaNacimiento"/>
+			<item value="shiatsuActClientes"/>
+			<item value="soloNumeros"/>
+			<item value="buscar"/>
+			<item value="pvStEstadoDescripcion"/>
+		</list>
+		<list key="replacehistory">
+			<item value="shiatsuActCliente"/>
+			<item value="vLoTelefonoCelular"/>
+			<item value="vLoTelefonoCasa"/>
+			<item value="pvLoTelefonoCasa"/>
+			<item value="shiatsu"/>
+			<item value="exceptionBussinessError"/>
+			<item value="BussinessErrorHelper"/>
+			<item value="addMessage"/>
+		</list>
+	</section>
+</section>

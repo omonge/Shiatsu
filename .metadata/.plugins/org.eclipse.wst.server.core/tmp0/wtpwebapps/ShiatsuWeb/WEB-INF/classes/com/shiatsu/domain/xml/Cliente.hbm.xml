@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.shiatsu.domain">
+    <class name="Cliente" table="CAT_CLIENTE">
+        <id name="pvStCodigo" column="CODIGO" type="java.lang.Integer" length="10">
+            <generator class="identity" />
+        </id>
+		<many-to-one name="pvDiDiagnostico" class="com.shiatsu.domain.Diagnostico" lazy="false" >
+		    <column name="DIAGNOSTICO" />
+		</many-to-one>
+		    
+        <property name="pvStNombre" 			column="NOMBRE" 				type="java.lang.String" 	length="50"/>
+        <property name="pvStDireccion" 			column="DIRECCION" 				type="java.lang.String" 	length="100"/>
+        <property name="pvStEmail1" 			column="EMAIL1" 				type="java.lang.String" 	length="50"/>
+        <property name="pvStEmail2" 			column="EMAIL2" 				type="java.lang.String" 	length="50"/>
+        <property name="pvStFacturaNombre" 		column="FACTURA_A_NOMBRE" 		type="java.lang.String" 	length="50"/>
+        <property name="pvInFrecuenciaCita"		column="FRECUENCIA_CITA" 		type="java.lang.Integer" 	length="1"/>
+        <property name="pvStLugarProfesion"		column="LUGAR_PROFESION" 		type="java.lang.String" 	length="50"/>
+        <property name="pvDaNacimiento" 		column="NACIMIENTO" 			type="java.util.Date"/>
+        <property name="pvInNacionalidad"		column="NACIONALIDAD"			type="java.lang.Integer" 	length="10"/>
+        <property name="pvInProfesion" 			column="PROFESION" 				type="java.lang.Integer" 	length="10"/>
+        <property name="pvStSexo"	 			column="SEXO" 					type="java.lang.String" 	length="1"/>
+        <property name="pvLoTelefonoCasa" 		column="TELEFONO_CASA" 			type="java.lang.Long" 		length="10"/>
+        <property name="pvLoTelefonoCelular" 	column="TELEFONO_CELULAR" 		type="java.lang.Long" 		length="10"/>
+        <property name="pvInTipoAlopecia" 		column="TIPO_ALOPECIA" 			type="java.lang.Integer"	length="3"/>
+        
+        <property name="pvInProvincia" 			column="PROVINCIA" 				type="java.lang.Integer"	length="3"/>
+        <property name="pvInCanton" 			column="CANTON" 				type="java.lang.Integer"	length="3"/>
+        <property name="pvInDistrito" 			column="DISTRITO"				type="java.lang.Integer"	length="3"/>
+
+
+        <property name="pvStEstado"                 column="ESTADO"                     type="java.lang.String"     length="1"/>
+        <property name="pvDaModifica"               column="FMODIFICA"                  type="java.util.Date"/>
+        <many-to-one name="pvObUsuario" class="com.shiatsu.domain.Usuario" lazy="false" >
+            <column name="USUARIO" />
+        </many-to-one>
+        
+    </class>
+</hibernate-mapping>
+
