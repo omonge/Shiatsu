@@ -25,6 +25,9 @@ public class AgendaCapilar implements Serializable {
 	private TipoCliente tipoCliente;
 	private String 		observacion;*/
 	
+	private Boolean primero;
+	private Boolean ultimo;
+	
 	
 	public AgendaCapilar() {
 		// TODO Auto-generated constructor stub
@@ -45,10 +48,7 @@ public class AgendaCapilar implements Serializable {
 	}
 
 
-
-	public int getHoraMin(){
-		return this.hora.intValue();
-	}
+ 
 	/**
 	 * @return the id
 	 */
@@ -88,5 +88,17 @@ public class AgendaCapilar implements Serializable {
 			return false;
 		}
 		return true;
+	}
+	public Boolean getUltimo() {
+		return ultimo;
+	}
+	public void setUltimo(Boolean ultimo) {
+		this.ultimo = ultimo;
+	}
+	public Boolean getPrimero() {
+		return primero;
+	}
+	public void setPrimero(Boolean primero) {
+		this.primero = primero;
 	}
 }

@@ -96,34 +96,38 @@ public class AgendaCapilarServletController extends Controller  {
 		}
 		AgendaCapilar agenda= new AgendaCapilar();
 		List<AgendaCapilar> lista = new ArrayList<AgendaCapilar>();
-        agenda.setHora(Integer.valueOf(this.inicio.intValue())+1);
+        agenda.setHora(Integer.valueOf(700));
+        agenda.setPrimero(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
-        agenda.setHora(Integer.valueOf(this.inicio.intValue())+2);
+        agenda.setHora(Integer.valueOf(700));
+        agenda.setUltimo(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
-        agenda.setHora(Integer.valueOf(this.inicio.intValue())+3);
+        agenda.setHora(Integer.valueOf(800));
+        agenda.setPrimero(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
-        agenda.setHora(Integer.valueOf(this.inicio.intValue())+4);
+        agenda.setHora(Integer.valueOf(800));
+        agenda.setUltimo(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
-        agenda.setHora(Integer.valueOf(this.inicio.intValue())+5);
+        agenda.setHora(Integer.valueOf(830));
+        agenda.setPrimero(Boolean.TRUE);
+        agenda.setUltimo(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
-        agenda.setHora(Integer.valueOf(this.inicio.intValue())+6);
+        agenda.setHora(Integer.valueOf(900));
+        agenda.setPrimero(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
-        agenda.setHora(Integer.valueOf(this.inicio.intValue())+7);
+        agenda.setHora(Integer.valueOf(900));
+        agenda.setUltimo(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
-        agenda.setHora(Integer.valueOf(this.inicio.intValue())+8);
-        lista.add(agenda);
-        agenda= new AgendaCapilar();
-        agenda.setHora(Integer.valueOf(this.inicio.intValue())+9);
-        lista.add(agenda);
-        agenda= new AgendaCapilar();
-        agenda.setHora(Integer.valueOf(this.inicio.intValue())+10);
+        agenda.setHora(Integer.valueOf(1000));
+        agenda.setPrimero(Boolean.TRUE);
+        agenda.setUltimo(Boolean.TRUE);
         lista.add(agenda);
         return lista;
 	}
@@ -187,7 +191,10 @@ public class AgendaCapilarServletController extends Controller  {
 		 return "success";
 	}
 		
-	
+	public List getAgenda(){
+		
+		return this.creaArreglo();
+	}
 
 	/**
      * Retorna una lista de selectItems que contienen frecuencia de agendaCapilars del agendaCapilar

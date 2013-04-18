@@ -175,7 +175,7 @@
                 </nav>
                 <section id="main"> 
                     <div id="titulo" class="Tit_04_naranja">
-					<!-- InstanceBeginEditable name="titulo" --><h:outputText styleClass="outputText" value="#{rcs['titulo.droga.mantenimiento']}"/><!-- InstanceEndEditable -->
+					<!-- InstanceBeginEditable name="titulo" --><h:outputText styleClass="outputText" value="Agenda Clientes"/><!-- InstanceEndEditable -->
                     </div>
                     <div id="cuerpo" class="Text">
 						<!-- InstanceBeginEditable name="contenido" -->
@@ -186,11 +186,28 @@
    <table border="0">
 		<tbody>
 			<%
-			    List lista = (List)FA.getListaAgenda();
-			AgendaCapilar agendaCapilar = (AgendaCapilar)lista.get(0);
-				out.println("Author Name:"+ agendaCapilar.getHoraMin());
-			%>
-			
+			    List lista = (List)FA.getAgenda();
+			   
+				//out.println("Author Name:"+ agendaCapilar.getHoraMin());
+				boolean abrir = true;
+				for(int i =0; i < lista.size(); i++){
+					AgendaCapilar agendaCapilar = (AgendaCapilar)lista.get(i);
+					if(agendaCapilar!=null && (agendaCapilar.getHora()!=null)){ 
+							if(agendaCapilar.getPrimero()!=null  && agendaCapilar.getPrimero()){%>  
+								<tr>	
+							<%}%>  
+									<td>
+											<h:commandLink styleClass="commandLink" id="link" action="#{agendaCapilarServletController.action}" >
+																 <%= agendaCapilar.getHora() %> 
+																<f:attribute value="center" name="align"/>
+											</h:commandLink>
+								     </td>
+							<%if(agendaCapilar.getUltimo()!=null  && agendaCapilar.getUltimo()){%>
+								</tr>
+							<%}%> 
+						
+					<%}//fin verificacion nulos %>
+			<%}//fin for %>
 		</tbody>
 	</table>
 		
