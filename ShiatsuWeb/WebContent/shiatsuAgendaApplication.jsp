@@ -38,7 +38,24 @@
     <script type="text/javascript" src="html5/jquery.js"></script> 
     <script type="text/javascript" src="html5/plantilla_html5.js"></script> 
     <script type="text/javascript" src="theme/hmenu/src/hmenu.js"></script>
-    <script type="text/javascript">document.writeln("<style type='text/css'>#menu { display: none; }</style>");</script>    
+    <script type="text/javascript">document.writeln("<style type='text/css'>#menu { display: none; }</style>");</script> 
+    <script type="text/javascript"> 
+    /*(function ($, window) {
+    	var document = window.document;
+    	function agregarCitaCliente (id){
+			alert('activated by '+ id);
+		};
+    	$(document).ready(function(){
+    		alert('every thing ready');
+    		
+        });
+    })(jQuery, this);*/
+    function agregarCitaCliente (id){ 
+    	alert(id);
+	};
+    
+    </script>    
+       
 </head> 
 
 <f:view locale="es-CR">
@@ -181,7 +198,7 @@
 						<!-- InstanceBeginEditable name="contenido" -->
        <h:form  styleClass="form" id="form1" >
        <h:inputHidden value="#{agendaCapilarServletController.init}" ></h:inputHidden>
-       <jsp:useBean id="FA" scope="application" class="com.shiatsu.web.controller.AgendaCapilarServletController" />
+       <jsp:useBean id="FA" scope="session" class="com.shiatsu.web.controller.AgendaCapilarServletController" />
 	   <jsp:setProperty name="FA" property="*" />
    <table border="0">
 		<tbody>
@@ -191,23 +208,40 @@
 				//out.println("Author Name:"+ agendaCapilar.getHoraMin());
 				boolean abrir = true;
 				for(int i =0; i < lista.size(); i++){
-					AgendaCapilar agendaCapilar = (AgendaCapilar)lista.get(i);
+					AgendaCapilar agendaCapilar = (AgendaCapilar)lista.get(i);%>
+					<c:set var="agendaCapilar" value="<%= agendaCapilar %>"  />
+					<c:out value="${agendaCapilar.getNombre()}"/>
+					<%
 					if(agendaCapilar!=null && (agendaCapilar.getHora()!=null)){ 
 							if(agendaCapilar.getPrimero()!=null  && agendaCapilar.getPrimero()){%>  
 								<tr>	
 							<%}%>  
+									<td>	<div id="<%= agendaCapilar.getHora() %>" >
+												<h:commandLink styleClass="commandLink" action="#{agendaCapilarServletController.action}" value="#{agendaCapilarServletController.listaAgenda[0].hora}" onclick="agregarCitaCliente( #{agendaCapilarServletController.listaAgenda[0].hora} )">
+																	 <%= agendaCapilar.getNombre() %> 
+																	<f:attribute value="center" name="align"/>
+												</h:commandLink>
+											</div>
+								     </td>
+							<%if(agendaCapilar.getUltimo()!=null  && agendaCapilar.getUltimo()){%>
 									<td>
-											<h:commandLink styleClass="commandLink" id="link" action="#{agendaCapilarServletController.action}" >
-																 <%= agendaCapilar.getHora() %> 
+											<h:commandLink styleClass="commandLink" id="linkAgregar" action="#{agendaCapilarServletController.action}"  >
+																<h:outputText styleClass="outputText pad-right"
+																	value="Agregar"
+																	></h:outputText> 
 																<f:attribute value="center" name="align"/>
 											</h:commandLink>
 								     </td>
-							<%if(agendaCapilar.getUltimo()!=null  && agendaCapilar.getUltimo()){%>
 								</tr>
 							<%}%> 
 						
 					<%}//fin verificacion nulos %>
 			<%}//fin for %>
+			
+			
+		   
+		    
+		   
 		</tbody>
 	</table>
 		

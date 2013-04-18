@@ -188,7 +188,7 @@
 			 
 			 	 for(int i = 0 ; i < lista.size(); i++){ %> 
 					<tr><td><h:commandLink styleClass="commandLink" id="link1" action="#{agendaCapilarServletController.action}" >
-										 <%= lista.get(i).getHoraMin() %> 
+										 <%= lista.get(i).getHora() %> 
 			
 										<f:attribute value="center" name="align"/>
 									</h:commandLink></td></tr>

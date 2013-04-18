@@ -6,7 +6,7 @@ package com.shiatsu.web.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.faces.component.html.HtmlColumn;
+import javax.faces.component.html.HtmlCommandLink;
 import javax.faces.component.html.HtmlDataTable; 
 import javax.faces.context.FacesContext;
 import javax.faces.model.SelectItem;
@@ -36,7 +36,16 @@ public class AgendaCapilarServletController extends Controller  {
     private AgendaCapilar 	  	agendaCapilar;
     public static final int COLUMNAS 	= 7;
 	public static final Integer FILAS	 	= new Integer(10);
+	HtmlCommandLink test;
 	
+	public HtmlCommandLink getTest() {
+		return test;
+	}
+
+	public void setTest(HtmlCommandLink test) {
+		this.test = test;
+	}
+
 	public AgendaCapilarServletController() { 
 		this.reiniciarController();
 	}
@@ -89,43 +98,46 @@ public class AgendaCapilarServletController extends Controller  {
 	}
 	 
 	private List<AgendaCapilar> creaArreglo(){
-		if(this.inicio == null){
-			inicio=Integer.valueOf(1);
-		}else{
-			inicio++;
-		}
 		AgendaCapilar agenda= new AgendaCapilar();
 		List<AgendaCapilar> lista = new ArrayList<AgendaCapilar>();
         agenda.setHora(Integer.valueOf(700));
+        agenda.setNombre("Herman Miller");
         agenda.setPrimero(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
         agenda.setHora(Integer.valueOf(700));
+        agenda.setNombre("Oscar Vega");
         agenda.setUltimo(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
         agenda.setHora(Integer.valueOf(800));
+        agenda.setNombre("Fernando De la O");
         agenda.setPrimero(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
         agenda.setHora(Integer.valueOf(800));
+        agenda.setNombre("Maria Perez");
         agenda.setUltimo(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
         agenda.setHora(Integer.valueOf(830));
+        agenda.setNombre("Jose Guerrero");
         agenda.setPrimero(Boolean.TRUE);
         agenda.setUltimo(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
         agenda.setHora(Integer.valueOf(900));
+        agenda.setNombre("Juana Alvarez");
         agenda.setPrimero(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
         agenda.setHora(Integer.valueOf(900));
+        agenda.setNombre("Rosa Alfaro");
         agenda.setUltimo(Boolean.TRUE);
         lista.add(agenda);
         agenda= new AgendaCapilar();
         agenda.setHora(Integer.valueOf(1000));
+        agenda.setNombre("Gregorie Brenes");
         agenda.setPrimero(Boolean.TRUE);
         agenda.setUltimo(Boolean.TRUE);
         lista.add(agenda);
@@ -175,9 +187,10 @@ public class AgendaCapilarServletController extends Controller  {
         
 	}
 	public String action(){
-		System.out.println("asdfasdf");
-		//this.agendaCapilar = (AgendaCapilar) this.listaDataTableAgendaCapilar.getRowData();
-		HtmlColumn column = new HtmlColumn();
+		System.out.println(this.listaDataTableAgendaCapilar.getChildCount());
+		//this.agendaCapilar = (AgendaCapilar) 
+			//Object ob=	this.listaDataTableAgendaCapilar.getValue();
+		//HtmlColumn column = new HtmlColumn();
 		
 		return "success";
 	}

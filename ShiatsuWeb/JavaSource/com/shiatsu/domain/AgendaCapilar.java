@@ -17,13 +17,15 @@ public class AgendaCapilar implements Serializable {
 	public static final Integer FILAS	 	= new Integer(10);
 
 	private Long 		id;
-	/*private Long 		cedula;
-	private String 		apellidos;*/
+	private String		nombre;
+	private Long 		cedula;
+	private String 		apellidos;
 	private Integer		hora;
-	/*private Date 		fecha;
+	private Date 		fecha;
 	private Usuario 	usuario;
 	private TipoCliente tipoCliente;
-	private String 		observacion;*/
+	private String 		observacion;
+	
 	
 	private Boolean primero;
 	private Boolean ultimo;
@@ -88,6 +90,50 @@ public class AgendaCapilar implements Serializable {
 			return false;
 		}
 		return true;
+	}
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public Long getCedula() {
+		return cedula;
+	}
+	public void setCedula(Long cedula) {
+		this.cedula = cedula;
+	}
+	public String getApellidos() {
+		return apellidos;
+	}
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+	public Date getFecha() {
+		return fecha;
+	}
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
+	}
+	public Usuario getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	public TipoCliente getTipoCliente() {
+		return tipoCliente;
+	}
+	public void setTipoCliente(TipoCliente tipoCliente) {
+		this.tipoCliente = tipoCliente;
+	}
+	public String getObservacion() {
+		return observacion;
+	}
+	public void setObservacion(String observacion) {
+		this.observacion = observacion;
 	}
 	public Boolean getUltimo() {
 		return ultimo;
